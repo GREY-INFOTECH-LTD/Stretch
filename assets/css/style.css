@@ -1,0 +1,1126 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*  Playfair Display for main page and Monteserrat for thhe 404 Error Page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+/*-----------------------------------------Custom Paddings/Margins/Text */
+html {
+    font-size: 16px;
+}
+
+body > section {
+    position: relative;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+    overflow: hidden;
+}
+
+.col-xs-8.col-sm-4, .col-sm-6, .col-md-6,
+.col-12.section-header {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #011826;
+    text-shadow: 2px 2px #011826;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3.about-header {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    color: #011826;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    color: #011826;
+    font-size: 1.2rem;
+}
+
+hr {
+    width: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 3px solid #000000;
+}
+
+a {
+    color: #011826;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #69A8A9;
+    text-decoration: none;
+}
+
+mark {
+    background-color: rgba(189, 224, 225, 0.17);
+}
+
+p {
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#about-description, #contact-description, #schedule-description, #reviews-description {
+        text-align: center;
+        margin: 20px 20px;
+        padding: 0 50px;
+}
+
+p.text-muted {
+    font-family: 'Futura-PT', sans-serif;
+    margin: 10px 20px;
+    font-size: 1rem;
+}
+/* end custom paddings/margins/text */
+
+/*-------------------------------------------- Text Selection */
+    /* Makes text selection the primary color. Copied from https://www.w3schools.com/cssref/sel_selection.asp */
+    ::-moz-selection { /* Code for Firefox */
+        color: #f2f2f2;
+        background: #69a8a9;
+      }
+      
+    ::selection { /* Text selection code */
+        color: #f2f2f2;
+        background: #69a8a9;
+    }
+/* end text selection */
+
+/*-------------------------------------------- Page Sections */
+#schedule, #contact {
+    margin-top: 50px;
+    padding: 60px 40px;
+    background: rgba(135, 156, 166, 0.2);
+}
+
+#reviews, #about {
+    margin-top: 50px;
+    padding: 60px 60px;
+}
+/* end page sections */
+
+/*-------------------------------------------- Header */
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+    line-height: 1.5;
+}
+
+/* navbar styles copied from Stack Overflow(https://stackoverflow.com/questions/41743102/changing-the-color-of-active-nav-item) */
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, li.nav-item.active {
+    color:#69a8a9;
+    text-decoration: overline;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#69a8a9;
+}
+
+i.fas.fa-infinity {
+    color: #69a8a9;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px #011826;
+}
+
+i.fas.fa-infinity:hover {
+    color: #011826;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px #69a8a9;
+}
+
+a.navbar-brand {
+    font-family: 'Cambria', sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* CTA Button copied from (http://www.matrebel.co.uk/) */
+a.cta_button, a.cta_button:active {
+    position: absolute;
+    top: 1.5rem;
+    right: 6rem;
+    background: #011826;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    color: #fafafa;
+    z-index: 1;
+    border: none;
+    outline: none;
+    -webkit-animation: fadein 2.5s ease-in;
+    animation: fadein 2.5s ease-in;
+    padding-top: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+}
+  
+  a.cta_button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background: #000000;
+    color: #fafafa;
+}
+    /* end cta button */
+/* end header */
+
+/*-------------------------------------------- Jumbotron */
+    /* jumbotron-container syntax copied from Code Institute's Whiskey Drop project */
+.jumbotron-container {
+    background-image: url('../images/infinityphoto.jpg');
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.jumbotron-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 10, 10, .75);
+    overflow: visible;
+}
+
+a.btn.btn-info.btn-lg {
+    background-color: #000000;
+    color: #011826;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+a.btn.btn-info.btn-lg:hover {
+    background-color: #011826;
+    color: #f2f2f2;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+h1.display-3 {
+    font-family: 'Futura-PT', sans-serif;
+    color: #f2f2f2;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #011826;
+    font-size: 5rem;
+}
+
+h2.lead {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* end jumbotron */
+
+/*-------------------------------------------- About */
+.container-wrapper-about {
+    padding: 40px 0px;
+}
+
+.about i {
+    margin-bottom: 20px;
+    line-height: 45px;
+}
+
+p.article {
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#mind, #body, #spirit, #peace, #love, #harmony {
+    padding: 10px 20px;
+}
+
+i.fas.fa-yin-yang.d-sm-block,
+i.fas.fa-peace.d-sm-block,
+i.fas.fa-heart.d-sm-block,
+i.fas.fa-fire-alt.d-sm-block,
+i.fas.fa-brain.d-sm-block,
+i.fas.fa-praying-hands.d-sm-block {
+    color: #000000;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+i.fas.fa-yin-yang.d-sm-block:hover,
+i.fas.fa-peace.d-sm-block:hover,
+i.fas.fa-heart.d-sm-block:hover,
+i.fas.fa-fire-alt.d-sm-block:hover,
+i.fas.fa-brain.d-sm-block:hover,
+i.fas.fa-praying-hands.d-sm-block:hover {
+    color: #011826;
+    font-size: 50px;
+    margin-top: 20px;
+}
+/* end about */
+
+/*-------------------------------------------- Schedule */
+.container-wrapper-schedule {
+    text-align: center;
+    padding: 40px 0;
+}
+
+p.schedule-content {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+ 
+.card {
+    -webkit-box-shadow: rgba(1, 24, 38, 0.2) 0px 2px 5px 0px, rgba(1, 24, 38, 0.2) 0px 2px 10px 0px;
+    box-shadow: rgba(1, 24, 38, 0.2) 0px 2px 5px 0px, rgba(1, 24, 38, 0.2) 0px 2px 10px 0px;
+}
+
+/* Animated signUp copied from Codepen (https://codepen.io/b3taf1sh/full/xxwQJGX) */
+.signUp {
+  width: 130px;
+  height: 65px;
+  margin: 0 auto;
+  line-height: 65px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg rect, svg path, svg polyline {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.signUp:hover svg rect {
+  stroke: #000000;
+}
+
+svg rect {
+  stroke-dasharray: 400, 0;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+.signUp:hover svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 35, 245;
+  stroke-dashoffset: 38;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+div.signUp, a.nav-item {
+	color: #69a8a9;
+	text-align: center;
+	border-radius: 2px;
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    color: #69a8a9;
+}
+/* end animated signUp */
+
+#class1, #class2, #class3 {
+    width: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px solid #000000;
+}
+/* end schedule */
+
+
+/*-------------------------------------------- Reviews */
+.container-fluid.reviews-container {
+    padding: 20px 0px;
+    margin-bottom: 50px;
+}
+
+.review-card .card-top {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.top-color {
+    background-color: #69a8a9 !important;
+}
+
+.review-card .avatar {
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card.review-card.h-100 {
+    background-color: #fff;
+    -webkit-box-shadow: rgba(1, 24, 38, 0.2) 0px 2px 5px 0px, rgba(1, 24, 38, 0.2) 0px 2px 10px 0px;
+    box-shadow: rgba(1, 24, 38, 0.2) 0px 2px 5px 0px, rgba(1, 24, 38, 0.2) 0px 2px 10px 0px;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+blockquote {
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+
+#reviews-header {
+    margin-top: 40px;
+}
+/* end reviews */
+
+/*-------------------------------------------- Contact */
+.container-wrapper-contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.form-control {
+    margin: 0 auto;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+
+.form-group {
+    color: #000000;
+}
+
+i.fas.fa-map-marker-alt,
+i.fas.fa-phone,
+i.fas.fa-envelope-open {
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: 6px;
+}
+
+i.fas.fa-calendar, i.fas.fa-clock {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.fas.fa-calendar:hover, .fas.fa-clock:hover  {
+    color: #011826;
+    font-size: 1rem;
+}
+
+i.fas.fa-map-marker-alt:hover,
+i.fas.fa-phone:hover,
+i.fas.fa-envelope-open:hover,
+.fas.fa-calendar:hover, .fas.fa-clock:hover  {
+    color: #011826;
+    font-size: 1rem;
+}
+
+span.contact {
+    color: #011826;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.form-group.row {
+    font-family: 'Futura-PT', sans-serif;
+    color: #000000;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: .25rem;
+}
+
+.form-control.placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.row.contact {
+    margin-top: 50px;
+}
+
+label {
+    color: #011826;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin: 10px 0;
+}
+
+input#name.form-control,
+input#contact-email.form-control,
+textarea#comments.form-control
+ {
+    color: #000000;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.form-control::-moz-placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+.form-control::placeholder {
+    color: #000000;
+    font-family: "Futura-PT", sans-serif;
+    font-size: 1rem;
+}
+
+button.btn.btn-info.float-right {
+    background-color: #020202;
+    border-color: transparent;
+    font-family: 'Playfair Display', serif;
+}
+
+button.btn.btn-info.float-right:hover {
+    background-color: #011826;
+    border-color: transparent;
+    font-family: 'Playfair Display', serif;
+    color: #f2f2f2;
+}
+
+li.contact-info,
+#address, #phone, #email-owner {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: center;
+}
+/* end contact */
+
+/*-------------------------------------------- Footer */
+footer {
+    background-color: #fff;
+}
+
+footer i.fas.fa-chevron-up {
+    font-size: 30px;
+    color: #000000;
+    margin: 15px 0;
+}
+
+footer i.fas.fa-chevron-up:hover {
+    font-size: 30px;
+    color: #011826;
+    margin: 15px 0;
+}
+
+#facebook, #instagram, #pinterest, #twitter {
+    margin: 10px 15px;
+    font-size: 1.4rem;
+}
+
+hr.footer-divider {
+    width: 100%;
+    border: .5px solid #000000;
+    margin: 10px 0;
+}
+
+i.fab.fa-twitter-square,
+i.fab.fa-facebook-square,
+i.fab.fa-instagram-square,
+i.fab.fa-pinterest {
+    color: #000000;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+i.fab.fa-twitter-square:hover,
+i.fab.fa-facebook-square:hover,
+i.fab.fa-instagram-square:hover,
+i.fab.fa-pinterest:hover {
+    color: #011826;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+ol.breadcrumb.justify-content-center {
+    background-color: transparent;
+    margin: 10px 0;
+}
+
+li.breadcrumb-item {
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 14px;
+}
+
+.socials {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -o-transition-delay: 0s;
+       transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+    width: auto;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.socials li {
+    float: left;
+}
+
+.socials a {
+    display: block;
+    line-height: 1em;
+}
+/* end footer */
+
+/*--------------------------------------------  404 Error Page (https://colorlib.com) */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body#notfound-body {
+      padding: 0;
+      margin: 0 auto;
+      background-color: #fff;
+  }
+    
+  #notfound {
+      position: relative;
+      height: 100vh;
+  }
+    
+  #notfound .notfound {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+  }
+    
+  #notfound .notfound-bg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+    
+  #notfound .notfound-bg>div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: #fff;
+    }
+    
+  #notfound .notfound-bg>div:nth-child(1) {
+      left: 20%;
+    }
+    
+  #notfound .notfound-bg>div:nth-child(2) {
+      left: 40%
+    }
+    
+  #notfound .notfound-bg>div:nth-child(3) {
+      left: 60%
+    }
+    
+  #notfound .notfound-bg>div:nth-child(4) {
+      left: 80%
+    }
+    
+  #notfound .notfound-bg>div:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -0.5px;
+      -webkit-transform: translateY(-170px);
+          -ms-transform: translateY(-170px);
+              transform: translateY(-170px);
+      height: 170px;
+      width: 3px;
+      background-color: #69a8a9;
+    }
+    
+    @-webkit-keyframes drop {
+      90% {
+        height: 20px;
+      }
+      100% {
+        height: 170px;
+        -webkit-transform: translateY(calc(100vh + 170px));
+                transform: translateY(calc(100vh + 170px));
+      }
+    }
+    
+    @keyframes drop {
+      90% {
+        height: 20px;
+      }
+      100% {
+        height: 170px;
+        -webkit-transform: translateY(calc(100vh + 170px));
+                transform: translateY(calc(100vh + 170px));
+      }
+    }
+    
+  #notfound .notfound-bg>div:nth-child(1):after {
+      -webkit-animation: drop 3s infinite linear;
+              animation: drop 3s infinite linear;
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
+    }
+    
+  #notfound .notfound-bg>div:nth-child(2):after {
+      -webkit-animation: drop 2s infinite linear;
+              animation: drop 2s infinite linear;
+      -webkit-animation-delay: 0.7s;
+              animation-delay: 0.7s;
+    }
+    
+  #notfound .notfound-bg>div:nth-child(3):after {
+      -webkit-animation: drop 3s infinite linear;
+              animation: drop 3s infinite linear;
+      -webkit-animation-delay: 0.9s;
+              animation-delay: 0.9s;
+    }
+    
+  #notfound .notfound-bg>div:nth-child(4):after {
+      -webkit-animation: drop 2s infinite linear;
+              animation: drop 2s infinite linear;
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s;
+    }
+    
+  .notfound {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    
+  .notfound .notfound-404 {
+      height: 210px;
+      line-height: 210px;
+    }
+    
+  .notfound .notfound-404 h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; 
+      font-style: normal;  
+      font-size: 180px;
+      text-shadow: -2px -2px 0px #69aaab, 1px 1px 0px #f71e6bbf;
+      letter-spacing: -15px;
+      color: #081108;
+      line-height: 300px;
+    }
+    
+  .notfound h2 {
+      font-family: 'Dolce', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-shadow: 1px 2px 0px #69a8a9;
+    }
+    
+  .notfound a {
+      margin-top: 10px;
+      font-family: 'Futura-PT', sans-serif;
+      padding: 10px 30px;
+      display: inline-block;
+      color: #000;
+      font-weight: 400;
+      text-transform: uppercase;
+      -webkit-box-shadow: 0px 0px 0px 2px #000, 2px 2px 0px 2px #69a8a9;
+              box-shadow: 0px 0px 0px 2px #000, 2px 2px 0px 2px #69a8a9;
+      text-decoration: none;
+      -webkit-transition: 0.2s all;
+      -o-transition: 0.2s all;
+      transition: 0.2s all;
+    }
+    
+  .notfound a:hover {
+      background-color: #69a8a9;
+      -webkit-box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #69a8a9;
+              box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #69a8a9;
+    }
+    
+  .notfound-social {
+      margin-top: 35px;
+    }
+    
+  .notfound-social>a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px;
+      margin: 0px 5px;
+    }
+    
+  .notfound-social>a:hover {
+      background-color: #69a8a9;
+      -webkit-box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #69a8a9;
+              box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #69a8a9;
+  }
+  
+  a.button {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  i.fab.fa-instagram, 
+  i.fab.fa-facebook,
+  i.fab.fa-pinterest-p,
+  i.fab.fa-twitter {
+      font-size: 1.2rem;
+      color: #081108;
+    }
+  /* end 404 error styles */
+
+/*-------------------------------------------- Media Queries */
+@media only screen and (max-width: 768px) {
+    .jumbotron-container {
+        background-image: url('../images/infinityphoto.jpg');
+        background-size: cover;
+        background-position: 18% 100%;
+        height: 100vh;
+        min-height: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;  
+    } h1, h1.display-3 {
+        font-size: 4.5rem;
+        font-family: 'Futura-PT', sans-serif;
+        color: #f2f2f2;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px #011826;
+    } h2.lead {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-shadow: 1px 2px #011826;
+        letter-spacing: .5px;
+    } h2, h2.section-header {
+        font-size: 1.8rem;
+    }
+    a.btn.btn-info.btn-lg {
+        font-size: 1.3rem;
+    } a.btn.btn-info.btn-lg:hover {
+        font-size: 1.3rem;
+    }
+    .container-fluid, .container {
+        max-width: 720px;
+    } 
+    a.cta_button, a.cta_button:active {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        color: #fafafa;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 25px;
+        font-size: 14px;
+    } .cta_button:hover {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 25px;
+        font-size: 14px;
+        background: #69A8A9;
+        color: #fafafa;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .jumbotron-container {
+        background-image: url('../images/infinityphoto.jpg');
+        background-size: cover;
+        background-position: 10% 100%;
+        height: 100vh;
+        min-height: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    } h1.display-3 {
+        font-size: 3.2rem;
+        font-family: 'Futura-PT', sans-serif;
+        color: #f2f2f2;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px #011826;
+    } h2.lead {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    } a.btn.btn-info.btn-lg {
+        font-size: 1rem;
+    } a.btn.btn-info.btn-lg:hover {
+        font-size: 1rem;
+    }
+    a.cta_button, a.cta_button:active {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        color: #fafafa;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 22px;
+    } .cta_button:hover {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 22px;
+        background: #69A8A9;
+        color: #fafafa;
+    } .review-card .avatar {
+        width: 100px;
+        margin-top: -60px;
+        overflow: hidden;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }    
+}
+
+@media only screen and (max-width: 425px) {
+    span.contact {
+        color: #011826;
+        font-family: "Futura-PT", sans-serif;
+        font-size: 14px;
+    }
+    form.needs-validation {
+        margin: 0 auto;
+    } li.contact-info, #address, #phone, #email-owner {
+        display: flex;
+        align-items: flex-start;
+        margin: 8px 0;
+    }
+    i.fas.fa-map-marker-alt,
+    i.fas.fa-phone,
+    i.fas.fa-envelope-open {
+        color: #69a8a9;
+        font-size: 15px;
+    } 
+    i.fas.fa-map-marker-alt:hover,
+    i.fas.fa-phone:hover,
+    i.fas.fa-envelope-open:hover {
+        color: #011826;
+        font-size: 15px;
+    }
+    .form-group.row {
+        font-family: 'Futura-PT', sans-serif;
+        color: #69a8a9;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .form-control.placeholder {
+        color: #787d80;
+        font-family: "Futura-PT", sans-serif;
+        font-size: 14px;
+    } label {
+        color: #011826;
+        font-family: "Futura-PT", sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin: 10px 0;
+    } #about-description, #contact-description, #schedule-description, #reviews-description {
+        padding: 10px 10px;
+        margin: 0 auto;
+    }
+}
+/* end media queries */
+  
